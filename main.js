@@ -23,7 +23,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 //var sess;
 
 // Routes -----------------------------------------------------------------------------
-require('./routes/route_db_column_list')(app);;
+//require('./routes/route_db_column_list')(app);
+require('./routes/route_db_sum')(app);
 // ------------------------------------------------------------------------------------
 
 // Start Openshift CICD Console ---------------------------------------------------------------
