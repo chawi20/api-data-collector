@@ -1,5 +1,7 @@
---> Persistent Volume
-docker run -d -ti --name nodejs-db -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=P@ssw0rd" -e "MYSQL_DATABASE=nodejs-db" -e "MYSQL_USER=nodeadmin" -e "MYSQL_PASSWORD=password" -v /var/lib/mysql:/mysql_data vulcanhub/mysql:5.7.21
+--> Persistent Volum
+sudo mkdir /mysql_data
+sudo chmod -R 777 /mysql_data
+sudo docker run -d -ti --name pi-db -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=P@ssw0rd" -e "MYSQL_DATABASE=pidb" -e "MYSQL_USER=piadmin" -e "MYSQL_PASSWORD=password" -v /var/lib/mysql:/mysql_data mysql:5.7.23
 
 --> Without Persistent Voulme
 docker run -d -ti --name nodejs-db -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=P@ssw0rd" -e "MYSQL_DATABASE=nodejs-db" -e "MYSQL_USER=nodeadmin" -e "MYSQL_PASSWORD=password" vulcanhub/mysql:5.7.21
