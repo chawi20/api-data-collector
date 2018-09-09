@@ -1,0 +1,15 @@
++ Initial
+cd <TARGET_DIRECTORY>
+git init
+git remote add origin <URL : https://github.com/chawi20/api-data-collector.git >
+git pull origin master
+
+
++ Push
+cd <TARGET_DIRECTORY>
+git status
+git add .
+git commit -m "description of changing"
+git push origin master
+
+git pull origin master
