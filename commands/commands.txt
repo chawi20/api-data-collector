@@ -1,0 +1,6 @@
+cd <ROOT_DIRECTORY>
+npm install --prefix . --save request
+npm install --prefix . --save mysql
+npm install --prefix . --save express
+npm install --prefix . --save http
+npm install --prefix . --save body-parser
